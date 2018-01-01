@@ -2,7 +2,7 @@ import scipy as sp
 import matplotlib.pyplot as plt
 from scipy.optimize import fsolve
 data = sp.genfromtxt('web_traffic.tsv', delimiter='\t')
-# print(data[:10])
+
 x = data[:, 0]
 y = data[:, 1]
 sp.sum(sp.isnan(y))
